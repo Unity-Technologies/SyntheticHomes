@@ -1,0 +1,16 @@
+# For more information about the available options please visit: http://go/backstage (VPN required)
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    github.com/project-slug: Unity-Technologies/SynthHomes
+  name: SynthHomes
+  description: "This repository will house builds of Unity's synthetic home generator."
+  labels:
+    costcenter: "5029"
+  tags:
+    - planned-public
+spec:
+  type: other
+  lifecycle: experimental
+  owner: unity-technologies/computer-vision
