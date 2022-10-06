@@ -1,5 +1,11 @@
 # SynthHomes
-[View this project in Backstage](https://backstage.corp.unity3d.com/catalog/default/component/synthhomes) <br/>
-# Converting to public repository
-Any and all Unity software of any description (including components) (1) whose source is to be made available other than under a Unity source code license or (2) in respect of which a public announcement is to be made concerning its inner workings, may be licensed and released only upon the prior approval of Legal.
-The process for that is to access, complete, and submit this [FORM](https://docs.google.com/forms/d/e/1FAIpQLSe3H6PARLPIkWVjdB_zMvuIuIVtrqNiGlEt1yshkMCmCMirvA/viewform).
+
+Synthetic home interior generator with many randomized elements.
+
+## Command Line Arguments
+* `--scenario-config-file=<path-to-json-file>`
+  * Supply a configuration file to control various parameters related to rendering and randomization. Details [here](link).
+* `--resolution=<width>x<height>`
+  * Set the resolution of the output images. Example usage: `--resolution=1600x1200`
+* `--output-path=<path>`
+  * Specify output folder
