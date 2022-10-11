@@ -1,8 +1,8 @@
 {
   "constants": {
-    "startIteration": 0,
+    "startIteration": 750,
     "iterationCount": 1000,
-    "randomSeed": 1291805395
+    "randomSeed": 1000
   },
   "randomizers": {
     "randomizerGroups": [
@@ -149,7 +149,7 @@
                 "bool": true
               }
             }
-          },          
+          },
           "unloadUnusedAssetsPeriodically": {
             "scalar": {
               "metadata": {
@@ -194,7 +194,43 @@
                 "imageLink": ""
               },
               "value": {
-                "num": 2.0
+                "num": 3.0
+              }
+            }
+          },
+          "denoiserType": {
+            "scalar": {
+              "metadata": {
+                "name": "",
+                "description": "",
+                "imageLink": ""
+              },
+              "value": {
+                "str": "intel"
+              }
+            }
+          },
+          "useAovsForDenoising": {
+            "scalar": {
+              "metadata": {
+                "name": "",
+                "description": "",
+                "imageLink": ""
+              },
+              "value": {
+                "bool": true
+              }
+            }
+          },
+          "enableTemporalDenoising": {
+            "scalar": {
+              "metadata": {
+                "name": "",
+                "description": "",
+                "imageLink": ""
+              },
+              "value": {
+                "bool": false
               }
             }
           },
