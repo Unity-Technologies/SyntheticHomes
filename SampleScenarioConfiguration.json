@@ -1,30 +1,17 @@
 {
   "constants": {
-    "startIteration": 750,
+    "startIteration": 0,
     "iterationCount": 1000,
     "randomSeed": 1000
   },
   "randomizers": {
     "randomizerGroups": [
       {
-        "randomizerId": "ScenarioSettings",
-        "metadata": {
-          "name": "",
-          "description": "",
-          "imageLink": ""
-        },
-        "state": {
-          "enabled": true,
-          "canBeSwitchedByUser": true
-        },
+        "randomizerId": "ScenarioSettings",                
         "items": {
           "includeSingleFamilyVariantA": {
             "scalar": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "value": {
                 "bool": true
               }
@@ -32,11 +19,7 @@
           },
           "includeSingleFamilyVariantB": {
             "scalar": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "value": {
                 "bool": true
               }
@@ -44,11 +27,7 @@
           },
           "includeSingleFamilyVariantC": {
             "scalar": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "value": {
                 "bool": true
               }
@@ -56,11 +35,7 @@
           },
           "includeMultiFamilyVariantA": {
             "scalar": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "value": {
                 "bool": true
               }
@@ -68,11 +43,7 @@
           },
           "includeBathrooms": {
             "scalar": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "value": {
                 "bool": true
               }
@@ -80,11 +51,7 @@
           },
           "includeKitchens": {
             "scalar": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "value": {
                 "bool": true
               }
@@ -92,11 +59,7 @@
           },
           "includeBedrooms": {
             "scalar": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "value": {
                 "bool": true
               }
@@ -104,11 +67,7 @@
           },
           "includeDiningRooms": {
             "scalar": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "value": {
                 "bool": true
               }
@@ -116,11 +75,7 @@
           },
           "includeLivingRooms": {
             "scalar": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "value": {
                 "bool": true
               }
@@ -128,11 +83,7 @@
           },
           "includeHallsAndStairs": {
             "scalar": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "value": {
                 "bool": true
               }
@@ -140,35 +91,15 @@
           },
           "includeLaundryRooms": {
             "scalar": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "value": {
                 "bool": true
               }
             }
-          },
-          "unloadUnusedAssetsPeriodically": {
-            "scalar": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
-              "value": {
-                "bool": true
-              }
-            }
-          },
+          },          
           "usePathTracing": {
             "scalar": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "value": {
                 "bool": true
               }
@@ -176,11 +107,7 @@
           },
           "pathTracingSamples": {
             "scalar": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "value": {
                 "num": 200.0
               }
@@ -188,11 +115,7 @@
           },
           "pathTracingMaxDepth": {
             "scalar": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "value": {
                 "num": 3.0
               }
@@ -200,11 +123,7 @@
           },
           "denoiserType": {
             "scalar": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "value": {
                 "str": "intel"
               }
@@ -212,11 +131,7 @@
           },
           "useAovsForDenoising": {
             "scalar": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "value": {
                 "bool": true
               }
@@ -224,11 +139,7 @@
           },
           "enableTemporalDenoising": {
             "scalar": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "value": {
                 "bool": false
               }
@@ -236,49 +147,20 @@
           },
           "enableBloom": {
             "scalar": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "value": {
                 "bool": false
-              }
-            }
-          },
-          "framesBetweenUnloadingUnusedAssets": {
-            "scalar": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
-              "value": {
-                "num": 10.0
               }
             }
           }
         }
       },
       {
-        "randomizerId": "SceneRandomizer",
-        "metadata": {
-          "name": "",
-          "description": "",
-          "imageLink": ""
-        },
-        "state": {
-          "enabled": true,
-          "canBeSwitchedByUser": true
-        },
+        "randomizerId": "SceneRandomizer",                
         "items": {
           "iterationsPerScene": {
             "scalar": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "value": {
                 "num": 250.0
               }
@@ -287,32 +169,15 @@
         }
       },
       {
-        "randomizerId": "VantagePointsCameraPlacementRandomizer",
-        "metadata": {
-          "name": "",
-          "description": "",
-          "imageLink": ""
-        },
-        "state": {
-          "enabled": true,
-          "canBeSwitchedByUser": true
-        },
+        "randomizerId": "VantagePointsCameraPlacementRandomizer",        
         "items": {
           "pitch": {
             "param": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "items": {
                 "value": {
                   "samplerOptions": {
-                    "metadata": {
-                      "name": "",
-                      "description": "",
-                      "imageLink": ""
-                    },
+                    "metadata": {},
                     "uniform": {
                       "min": -15.0,
                       "max": -3.0
@@ -324,19 +189,11 @@
           },
           "yaw": {
             "param": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "items": {
                 "value": {
                   "samplerOptions": {
-                    "metadata": {
-                      "name": "",
-                      "description": "",
-                      "imageLink": ""
-                    },
+                    "metadata": {},
                     "uniform": {
                       "min": -3.0,
                       "max": 3.0
@@ -348,19 +205,11 @@
           },
           "roll": {
             "param": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "items": {
                 "value": {
                   "samplerOptions": {
-                    "metadata": {
-                      "name": "",
-                      "description": "",
-                      "imageLink": ""
-                    },
+                    "metadata": {},
                     "uniform": {
                       "min": -2.0,
                       "max": 2.0
@@ -372,22 +221,14 @@
           },
           "heightFromFloor": {
             "param": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "items": {
                 "value": {
                   "samplerOptions": {
-                    "metadata": {
-                      "name": "",
-                      "description": "",
-                      "imageLink": ""
-                    },
+                    "metadata": {},
                     "uniform": {
                       "min": 1.5,
-                      "max": 1.8500000238418579
+                      "max": 1.85
                     }
                   }
                 }
@@ -396,26 +237,14 @@
           },
           "fovRange": {
             "param": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "items": {
                 "value": {
                   "samplerOptions": {
-                    "metadata": {
-                      "name": "",
-                      "description": "",
-                      "imageLink": ""
-                    },
+                    "metadata": {},
                     "uniform": {
                       "min": 55.0,
-                      "max": 85.0,
-                      "limits": {
-                        "min": 10.0,
-                        "max": 180.0
-                      }
+                      "max": 85.0                      
                     }
                   }
                 }
@@ -426,137 +255,47 @@
       },
       {
         "randomizerId": "SplitGrammarRandomizer",
-        "metadata": {
-          "name": "",
-          "description": "",
-          "imageLink": ""
-        },
+        "metadata": {},
         "state": {
-          "enabled": true,
-          "canBeSwitchedByUser": true
-        },
-        "items": {
-          "onlyTriggerHighPriorityPrefabSurrogates": {
-            "scalar": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
-              "value": {
-                "bool": false
-              }
-            }
-          }
-        }
-      },
-      {
-        "randomizerId": "PrefabSwapperRandomizer",
-        "metadata": {
-          "name": "",
-          "description": "",
-          "imageLink": ""
-        },
-        "state": {
-          "enabled": true,
-          "canBeSwitchedByUser": true
-        },
-        "items": {
-          "onlyTriggerHighPrioritySwappers": {
-            "scalar": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
-              "value": {
-                "bool": false
-              }
-            }
-          }
-        }
-      },
-      {
-        "randomizerId": "AnimationRandomizer",
-        "metadata": {
-          "name": "",
-          "description": "",
-          "imageLink": ""
-        },
-        "state": {
-          "enabled": true,
-          "canBeSwitchedByUser": true
-        },
-        "items": {}
-      },
-      {
-        "randomizerId": "CustomAnimationRandomizer",
-        "metadata": {
-          "name": "",
-          "description": "",
-          "imageLink": ""
-        },
-        "state": {
-          "enabled": true,
-          "canBeSwitchedByUser": true
-        },
-        "items": {}
-      },
+          "enabled": true         
+        }        
+      },                  
       {
         "randomizerId": "SkyBoxRandomizer",
-        "metadata": {
-          "name": "",
-          "description": "",
-          "imageLink": ""
-        },
+        "metadata": {},
         "state": {
-          "enabled": true,
-          "canBeSwitchedByUser": true
-        },
-        "items": {}
+          "enabled": true          
+        }        
       },
       {
         "randomizerId": "CameraPostProcessingRandomizer",
-        "metadata": {
-          "name": "",
-          "description": "",
-          "imageLink": ""
-        },
+        "metadata": {},
         "state": {
-          "enabled": false,
-          "canBeSwitchedByUser": true
+          "enabled": true          
         },
         "items": {
           "blurOnProbability": {
             "scalar": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "value": {
-                "num": 0.20000000298023224
+                "num": 0
               }
             }
           },
           "blurIntensityParameter": {
             "param": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "items": {
                 "value": {
                   "samplerOptions": {
-                    "metadata": {
-                      "name": "",
-                      "description": "",
-                      "imageLink": ""
-                    },
+                    "metadata": {},
                     "uniform": {
                       "min": 0.0,
-                      "max": 0.0
+                      "max": 0.3,
+                      "limits": {
+                        "min": 0,
+                        "max": 1 
+                      }
                     }
                   }
                 }
@@ -565,22 +304,18 @@
           },
           "contrastParameter": {
             "param": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "items": {
                 "value": {
                   "samplerOptions": {
-                    "metadata": {
-                      "name": "",
-                      "description": "",
-                      "imageLink": ""
-                    },
+                    "metadata": {},
                     "uniform": {
                       "min": -10.0,
-                      "max": 10.0
+                      "max": 10.0,
+                      "limits": {
+                        "min": -50,
+                        "max": 50
+                      }
                     }
                   }
                 }
@@ -589,46 +324,18 @@
           },
           "saturationParameter": {
             "param": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "items": {
                 "value": {
                   "samplerOptions": {
-                    "metadata": {
-                      "name": "",
-                      "description": "",
-                      "imageLink": ""
-                    },
+                    "metadata": {},
                     "uniform": {
                       "min": -10.0,
-                      "max": 10.0
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "filmGrainParameter": {
-            "param": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
-              "items": {
-                "value": {
-                  "samplerOptions": {
-                    "metadata": {
-                      "name": "",
-                      "description": "",
-                      "imageLink": ""
-                    },
-                    "uniform": {
-                      "min": 0.0,
-                      "max": 0.0
+                      "max": 10.0,
+                      "limits": {
+                        "min": -50,
+                        "max": 50
+                      }
                     }
                   }
                 }
@@ -639,101 +346,35 @@
       },
       {
         "randomizerId": "DoorOpeningRandomizer",
-        "metadata": {
-          "name": "",
-          "description": "",
-          "imageLink": ""
-        },
+        "metadata": {},
         "state": {
-          "enabled": true,
-          "canBeSwitchedByUser": true
-        },
-        "items": {}
+          "enabled": true          
+        }        
       },
       {
         "randomizerId": "MaterialSwapperRandomizer",
-        "metadata": {
-          "name": "",
-          "description": "",
-          "imageLink": ""
-        },
+        "metadata": {},
         "state": {
-          "enabled": true,
-          "canBeSwitchedByUser": true
-        },
-        "items": {}
+          "enabled": true          
+        }        
       },
       {
         "randomizerId": "ClutterSwapperRandomizer",
-        "metadata": {
-          "name": "",
-          "description": "",
-          "imageLink": ""
-        },
+        "metadata": {},
         "state": {
-          "enabled": true,
-          "canBeSwitchedByUser": true
-        },
-        "items": {
-          "onlyTriggerHighPrioritySwappers": {
-            "scalar": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
-              "value": {
-                "bool": false
-              }
-            }
-          }
-        }
-      },
-      {
-        "randomizerId": "FloorDivisionRandomizer",
-        "metadata": {
-          "name": "",
-          "description": "",
-          "imageLink": ""
-        },
-        "state": {
-          "enabled": true,
-          "canBeSwitchedByUser": true
-        },
-        "items": {}
-      },
-      {
-        "randomizerId": "StopAnimationsRandomizer",
-        "metadata": {
-          "name": "",
-          "description": "",
-          "imageLink": ""
-        },
-        "state": {
-          "enabled": true,
-          "canBeSwitchedByUser": true
-        },
-        "items": {}
-      },
+          "enabled": true          
+        }        
+      },            
       {
         "randomizerId": "CustomSunAngleRandomizer",
-        "metadata": {
-          "name": "",
-          "description": "",
-          "imageLink": ""
-        },
+        "metadata": {},
         "state": {
-          "enabled": true,
-          "canBeSwitchedByUser": true
+          "enabled": true          
         },
         "items": {
           "warmLimit": {
             "scalar": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "value": {
                 "num": 1200.0
               }
@@ -741,11 +382,7 @@
           },
           "coldLimit": {
             "scalar": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "value": {
                 "num": 6500.0
               }
@@ -753,45 +390,29 @@
           },
           "dayTimeEnd": {
             "scalar": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "value": {
-                "num": 18.0
+                "num": 17.0
               }
             }
           },
           "dayTimeBegin": {
             "scalar": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "value": {
-                "num": 6.0
+                "num": 8.0
               }
             }
           },
           "hourRange1": {
             "param": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "items": {
                 "value": {
                   "samplerOptions": {
-                    "metadata": {
-                      "name": "",
-                      "description": "",
-                      "imageLink": ""
-                    },
+                    "metadata": {},
                     "uniform": {
-                      "min": 6.0,
+                      "min": 8.0,
                       "max": 10.0,
                       "limits": {
                         "min": 0.0,
@@ -805,22 +426,14 @@
           },
           "hourRange2": {
             "param": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "items": {
                 "value": {
                   "samplerOptions": {
-                    "metadata": {
-                      "name": "",
-                      "description": "",
-                      "imageLink": ""
-                    },
+                    "metadata": {},
                     "uniform": {
-                      "min": 14.0,
-                      "max": 18.0,
+                      "min": 15.0,
+                      "max": 17.0,
                       "limits": {
                         "min": 0.0,
                         "max": 24.0
@@ -833,22 +446,14 @@
           },
           "dayOfTheYear": {
             "param": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "items": {
                 "value": {
                   "samplerOptions": {
-                    "metadata": {
-                      "name": "",
-                      "description": "",
-                      "imageLink": ""
-                    },
+                    "metadata": {},
                     "uniform": {
-                      "min": 0.0,
-                      "max": 364.0,
+                      "min": 100.0,
+                      "max": 100.0,
                       "limits": {
                         "min": 0.0,
                         "max": 364.0
@@ -861,22 +466,14 @@
           },
           "latitude": {
             "param": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "items": {
                 "value": {
                   "samplerOptions": {
-                    "metadata": {
-                      "name": "",
-                      "description": "",
-                      "imageLink": ""
-                    },
+                    "metadata": {},
                     "uniform": {
-                      "min": -90.0,
-                      "max": 90.0,
+                      "min": 50.0,
+                      "max": 60.0,
                       "limits": {
                         "min": -90.0,
                         "max": 90.0
@@ -891,23 +488,14 @@
       },
       {
         "randomizerId": "DayNightSwitcherRandomizer",
-        "metadata": {
-          "name": "",
-          "description": "",
-          "imageLink": ""
-        },
+        "metadata": {},
         "state": {
-          "enabled": true,
-          "canBeSwitchedByUser": true
+          "enabled": true
         },
         "items": {
           "dayProbability": {
             "scalar": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "value": {
                 "num": 0.5
               }
@@ -915,11 +503,7 @@
           },
           "onlySelectDaytimeIfRoomHasWindows": {
             "scalar": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "value": {
                 "bool": true
               }
@@ -927,11 +511,7 @@
           },
           "randomExposure": {
             "scalar": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "value": {
                 "bool": false
               }
@@ -939,22 +519,18 @@
           },
           "exposureRange": {
             "param": {
-              "metadata": {
-                "name": "",
-                "description": "",
-                "imageLink": ""
-              },
+              "metadata": {},
               "items": {
                 "value": {
                   "samplerOptions": {
-                    "metadata": {
-                      "name": "",
-                      "description": "",
-                      "imageLink": ""
-                    },
+                    "metadata": {},
                     "uniform": {
                       "min": 0.0,
-                      "max": 1.0
+                      "max": 1.0,
+                      "limits": {
+                        "min": 0,
+                        "max": 1 
+                      }
                     }
                   }
                 }
@@ -965,16 +541,25 @@
       },
       {
         "randomizerId": "LightFixtureController",
-        "metadata": {
-          "name": "",
-          "description": "",
-          "imageLink": ""
-        },
-        "state": {
-          "enabled": true,
-          "canBeSwitchedByUser": true
-        },
-        "items": {}
+        "metadata": {},        
+        "items": {          
+          "lightTemperatureRange": {
+            "param": {
+              "metadata": {},
+              "items": {
+                "value": {
+                  "samplerOptions": {
+                    "metadata": {},
+                    "uniform": {
+                      "min": 2700.0,
+                      "max": 6500.0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     ]
   }
