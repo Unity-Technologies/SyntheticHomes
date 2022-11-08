@@ -1,6 +1,5 @@
 {
-  "constants": {
-    "startIteration": 0,
+  "constants": {    
     "iterationCount": 1000,
     "randomSeed": 1000
   },
@@ -291,11 +290,7 @@
                     "metadata": {},
                     "uniform": {
                       "min": 0.0,
-                      "max": 0.3,
-                      "limits": {
-                        "min": 0,
-                        "max": 1 
-                      }
+                      "max": 0.3                      
                     }
                   }
                 }
@@ -311,11 +306,7 @@
                     "metadata": {},
                     "uniform": {
                       "min": -10.0,
-                      "max": 10.0,
-                      "limits": {
-                        "min": -50,
-                        "max": 50
-                      }
+                      "max": 10.0
                     }
                   }
                 }
@@ -331,11 +322,7 @@
                     "metadata": {},
                     "uniform": {
                       "min": -10.0,
-                      "max": 10.0,
-                      "limits": {
-                        "min": -50,
-                        "max": 50
-                      }
+                      "max": 10.0
                     }
                   }
                 }
@@ -443,47 +430,7 @@
                 }
               }
             }
-          },
-          "dayOfTheYear": {
-            "param": {
-              "metadata": {},
-              "items": {
-                "value": {
-                  "samplerOptions": {
-                    "metadata": {},
-                    "uniform": {
-                      "min": 100.0,
-                      "max": 100.0,
-                      "limits": {
-                        "min": 0.0,
-                        "max": 364.0
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "latitude": {
-            "param": {
-              "metadata": {},
-              "items": {
-                "value": {
-                  "samplerOptions": {
-                    "metadata": {},
-                    "uniform": {
-                      "min": 50.0,
-                      "max": 60.0,
-                      "limits": {
-                        "min": -90.0,
-                        "max": 90.0
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
+          }          
         }
       },
       {
@@ -526,11 +473,7 @@
                     "metadata": {},
                     "uniform": {
                       "min": 0.0,
-                      "max": 1.0,
-                      "limits": {
-                        "min": 0,
-                        "max": 1 
-                      }
+                      "max": 1.0
                     }
                   }
                 }
