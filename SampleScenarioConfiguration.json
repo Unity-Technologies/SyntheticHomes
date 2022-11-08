@@ -400,11 +400,7 @@
                     "metadata": {},
                     "uniform": {
                       "min": 8.0,
-                      "max": 10.0,
-                      "limits": {
-                        "min": 0.0,
-                        "max": 24.0
-                      }
+                      "max": 10.0                      
                     }
                   }
                 }
@@ -420,11 +416,7 @@
                     "metadata": {},
                     "uniform": {
                       "min": 15.0,
-                      "max": 17.0,
-                      "limits": {
-                        "min": 0.0,
-                        "max": 24.0
-                      }
+                      "max": 17.0
                     }
                   }
                 }
