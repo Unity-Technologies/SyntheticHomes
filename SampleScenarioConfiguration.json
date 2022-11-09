@@ -3,6 +3,43 @@
     "iterationCount": 1000,
     "randomSeed": 1000
   },
+  "sensors": [
+    {
+      "name": "Main Camera",
+      "enabled": true,      
+      "type": "PerceptionCamera",
+      "labelers": [
+        {
+          "name": "boundingbox2dlabeler",                    
+          "enabled": true
+        },
+        {
+          "name": "semanticsegmentationlabeler",                    
+          "enabled": true
+        },
+        {
+          "name": "instancesegmentationlabeler",                    
+          "enabled": true
+        },
+        {
+          "name": "depthlabeler",                    
+          "enabled": true
+        },
+        {
+          "name": "normallabeler",                    
+          "enabled": true
+        },
+        {
+          "name": "occlusionlabeler",                    
+          "enabled": true
+        },
+        {
+          "name": "pixelpositionlabeler",                    
+          "enabled": true
+        }
+      ]
+    }
+  ],
   "randomizers": {
     "randomizerGroups": [
       {
