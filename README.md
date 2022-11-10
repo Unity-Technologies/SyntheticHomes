@@ -27,6 +27,14 @@ Interior lighting in homes is complex and is difficult to replicate with traditi
 * Pixel word position
 * Camera position and properties
 
+## How to Use
+
+Head over to the [Releases](https://github.com/Unity-Technologies/SyntheticHomes/releases) page and download the latest build. Once the archive is extracted, you can simply double click `SyntheticHomes.exe` to run the application with its default settings. A window will be opened and frames will start to be randomized and rendered. Each final frame will take a while to render as we accumulate multiple frames to achieve high quality path traced results.
+
+By default, the generated dataset will be located at `%USERPROFILE%\AppData\LocalLow\UnityTechnologies\SyntheticHomes`. You can browse through the dataset while the generator is running.
+
+Alternatively, you can supply command line arguments and an optional JSON configuration file to modify various settings of your run.
+
 ## Command Line Arguments
 * `--scenario-config-file=<path-to-json-file>`
   * Supply a configuration file to control various parameters related to rendering and randomization. See below for Instructions.
@@ -44,11 +52,13 @@ Datasets are generated in the SOLO formatted. For information on how to explore 
 
 Several aspects of the dataset generation can be controlled using a JSON config file that is provided to the application. A sample config file is provided [here](https://github.com/Unity-Technologies/SyntheticHomes/blob/main/SampleScenarioConfiguration.json).
 
-The configuration file includes two main sections: (a) **constants** and (b)**randomizers**.
+The configuration file includes three main sections: (a) **constants**, (b) **sensors**, and (c)**randomizers**.
 
 In the **constants** block, you specify:
 * `iterationCount`: The number of Iterations the simulation should run for. Each Iteration produces one annotated frame. E.g. to generate 1000 images in your dataset, you should set thus value to 1000.
 * `randomSeed`: The seed used for randomization. This generator uses Perception's randomization framework, which generates deterministic random numbers based on a provided seed. This helps you replicate datasets by keeping your seed value and randomization settings unchanged.
+
+In the **sensors** block, you can enable or disable sensors and their Labelers. This project contains a single sensor of type PerceptionCamera, so there is no point in disabling it. However, you can disable Labelers that you do not need to reduce the size of the output dataset by modifying the `enabled` field of each Labeler in the `labelers` array of the PerceptionCamera. If no JSON config is provided, all Labelers are activated.
 
 In the **randomizers** block of the JSON config file, you control the behavior of Perception Randomizers included in the project. Each Randomizer has one JSON block in this file. `randomizerId` denotes the name of the Randomizer, and `items` are the list of settings that can be changed. To change the behavior for each `item`, what you will need to modify is the `value` blok nested inside. In addition, some Randomizers can be completely disabled. We will now go through all the available Randomizers and their settings:
 
