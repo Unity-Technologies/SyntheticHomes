@@ -109,7 +109,7 @@ In the **randomizers** block of the JSON config file, you control the behavior o
 
 **Initial step**: Install gsutil [HOWTO install gsutil](https://cloud.google.com/storage/docs/gsutil_install)
 
-1. Download the entire dataset via the command line (~1.5TB)
+1. Download the entire dataset via the command line (~1.1TB)
 ```
 gsutil cp gs://unity-cv-dataset-examples/escher/100k-dataset/ ./
 ```
