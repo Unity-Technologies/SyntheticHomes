@@ -107,15 +107,15 @@ In the **randomizers** block of the JSON config file, you control the behavior o
 
 ## HOW TO Use prepared 100k dataset
 
-1. Install gsutil [HOWTO install gsutil](https://cloud.google.com/storage/docs/gsutil_install)
+**Initial step**: Install gsutil [HOWTO install gsutil](https://cloud.google.com/storage/docs/gsutil_install)
 
-2.a Download the entire dataset via the command line (~1.5TB)
+1. Download the entire dataset via the command line (~1.5TB)
 ```
 gsutil cp gs://unity-cv-dataset-examples/escher/100k-dataset/ ./
 ```
-2.b Or you can use it in jupyter notebook [HOWTO connect dataset to jupyter notebook](https://stackoverflow.com/questions/56721927/how-to-load-data-to-jupyter-notebook-vm-from-google-cloud)
+2. Use it in jupyter notebook [HOWTO connect dataset to jupyter notebook](https://stackoverflow.com/questions/56721927/how-to-load-data-to-jupyter-notebook-vm-from-google-cloud)
 
-2.c Just review the dataset structure [LINK](https://console.cloud.google.com/storage/browser/unity-cv-dataset-examples/escher/100k-dataset)
+3. Just review the dataset structure [LINK](https://console.cloud.google.com/storage/browser/unity-cv-dataset-examples/escher/100k-dataset)
 
 ## License
 * [License](LICENSE.md)
