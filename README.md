@@ -33,8 +33,10 @@ To download the entire 100k datset (~1.1TB), follow these instructions:
 ```
 gsutil -m cp -r gs://unity-cv-dataset-examples/escher/100k-dataset/ ./
 ```
-1. Use it in jupyter notebook [HOWTO connect dataset to jupyter notebook](https://stackoverflow.com/questions/56721927/how-to-load-data-to-jupyter-notebook-vm-from-google-cloud)
-1. Just review the dataset structure [LINK](https://console.cloud.google.com/storage/browser/unity-cv-dataset-examples/escher/100k-dataset)
+
+## Analyzing and Visualizing Datasets
+
+Datasets are generated in the SOLO format. For information on how to explore and analyze SOLO datasets, check out the [relevant pages](https://github.com/Unity-Technologies/com.unity.perception/com.unity.perception/Documentation~/Outputs.md) on the Perception repository.
 
 ## System Requirements
 
@@ -58,10 +60,6 @@ Alternatively, you can supply command line arguments and an optional JSON config
   * Set the resolution of the output images. Example usage: `--resolution=1600x1200`
 * `--output-path <path>`
   * Specify output folder
-
-## Analyzing and Visualizing Datasets
-
-Datasets are generated in the SOLO format. For information on how to explore and analyze SOLO datasets, check out the [relevant pages](https://github.com/Unity-Technologies/com.unity.perception/com.unity.perception/Documentation~/Outputs.md) on the Perception repository.
 
 ## Configuration File
 
