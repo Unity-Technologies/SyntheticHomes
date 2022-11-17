@@ -38,13 +38,7 @@ gsutil -m cp -r gs://unity-cv-dataset-examples/escher/100k-dataset/ ./
 
 Datasets are generated in the SOLO format. For information on how to explore and analyze SOLO datasets, check out the [relevant pages](https://github.com/Unity-Technologies/com.unity.perception/com.unity.perception/Documentation~/Outputs.md) on the Perception repository.
 
-## System Requirements
-
-* Windows 10 or 11 64-bit 
-* DX12 with DXR compatible GPU for path tracing (list available [here](https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@14.0/manual/Ray-Tracing-Getting-Started.html))
-  * The application will fall back to rasterization if DXR capable hardware is not detected.
-
-## How to Use
+## Dataset Generator
 
 Head over to the [Releases](https://github.com/Unity-Technologies/SyntheticHomes/releases) page and download the latest build. Once the archive is extracted, you can simply double click `SyntheticHomes.exe` to run the application with its default settings. A window will be opened and frames will start to be randomized and rendered. Each final frame will take a while to render as we accumulate multiple frames to achieve high quality path traced results.
 
@@ -52,7 +46,13 @@ By default, the generated dataset will be located at `%USERPROFILE%\AppData\Loca
 
 Alternatively, you can supply command line arguments and an optional JSON configuration file to modify various settings of your run.
 
-## Command Line Arguments
+### System Requirements
+
+* Windows 10 or 11 64-bit 
+* DX12 with DXR compatible GPU for path tracing (list available [here](https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@14.0/manual/Ray-Tracing-Getting-Started.html))
+  * The application will fall back to rasterization if DXR capable hardware is not detected.
+
+### Command Line Arguments
 * `--scenario-config-file=<path-to-json-file>`
   * Supply a configuration file to control various parameters related to rendering and randomization. See below for Instructions.
 
@@ -61,7 +61,7 @@ Alternatively, you can supply command line arguments and an optional JSON config
 * `--output-path <path>`
   * Specify output folder
 
-## Configuration File
+### Configuration File
 
 Several aspects of the dataset generation can be controlled using a JSON config file that is provided to the application. A sample config file is provided [here](https://github.com/Unity-Technologies/SyntheticHomes/blob/main/SampleScenarioConfiguration.json).
 
@@ -131,9 +131,3 @@ If you find SynthHomes useful, consider citing it using:
     year={2022}
 }
 ```
-
-
-
-## TODOs
-
-* Add link to pysolotools and Voxel51 tutorials viewer after perception release.
