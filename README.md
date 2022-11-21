@@ -29,7 +29,7 @@ A 500 image sample dataset can be found [here](https://storage.googleapis.com/un
 To download the entire 100k datset (~1.1TB), follow these instructions:
 
 1. [Install gsutil](https://cloud.google.com/storage/docs/gsutil_install)
-1. Download the dataset via the command line
+2. Download the dataset via the command line
 ```
 gsutil -m cp -r gs://unity-cv-dataset-examples/escher/100k-dataset/ ./
 ```
