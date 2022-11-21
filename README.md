@@ -46,7 +46,7 @@ Alternatively, you can supply command line arguments and an optional JSON config
 
 ## Analyzing and Visualizing Datasets
 
-Datasets are generated in the SOLO format. For information on how to explore and analyze SOLO datasets, check out the [relevant pages](https://github.com/Unity-Technologies/com.unity.perception/com.unity.perception/Documentation~/Outputs.md) on the Perception repository.
+Datasets are generated in the SOLO format. For information on how to explore and analyze SOLO datasets, check out the [endpoint and schema documentation pages](https://github.com/Unity-Technologies/com.unity.perception/blob/main/com.unity.perception/Documentation~/Outputs.md) on the Perception repository.
 
 ## Configuration File
 
@@ -130,9 +130,3 @@ If you find SynthHomes useful, consider citing it using:
     year={2022}
 }
 ```
-
-
-
-## TODOs
-
-* Add link to pysolotools and Voxel51 tutorials viewer after perception release.
