@@ -4,19 +4,13 @@
 
 # Synthetic Homes
 
-Use cases for in-home computer vision are innumerable, but gathering diverse home interior data in the real world is notoriously difficult due to privacy concerns and restrictions. Synthetic Homes is a Unity based application that generates labeled datasets of synthetic home interiors for the purpose of training computer vision models.
+Unity Synthetic Homes is a dataset generator and accompanying large-scale dataset of photorealistic randomized home interiors, built for training computer vision models such as object detection, scene understanding, and monocular depth estimation. 
 
 The application performs a wide variety of randomizations to maximize the diversity of generated datasets. These include materials, furniture type and configuration, sunlight angle and temperature, day/night switching, interior lighting temperature, camera angles, clutter, skybox, door and curtain animations, and more. By providing a configuration file, you control customize many of these elements, enabling you to tune them to your liking.
 
 This applications was made using the [Unity Perception package](https://github.com/Unity-Technologies/com.unity.perception), which provides tools for generating randomized synthetic CV datasets with a wide variety of ground-truth annotations.
 
 Interior lighting in homes is complex and is difficult to replicate with traditional raster-based methods. We used Unity’s multi-bounce **path tracing** to accomplish physically accurate global illumination and reflections. This accuracy can help bridge the so called “Sim2Real gap”, improving a model’s ability to perform well in the real world after training on synthetic data.
-
-## System Requirements
-
-* Windows 10 or 11 64-bit 
-* DX12 with DXR compatible GPU for path tracing (list available [here](https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@14.0/manual/Ray-Tracing-Getting-Started.html))
-  * The application will fall back to rasterization if DXR capable hardware is not detected.
 
 ## Included Label Types
 * Instance and semantic segmentation
@@ -27,7 +21,25 @@ Interior lighting in homes is complex and is difficult to replicate with traditi
 * Pixel word position
 * Camera position and properties
 
-## How to Use
+## How to use the 100k dataset
+We built a dataset of 100k home interior images and annotations in SOLO format. It is hosted at https://console.cloud.google.com/storage/browser/unity-cv-dataset-examples/escher/100k-dataset . 
+
+A 500 image sample dataset can be found [here](https://storage.googleapis.com/unity-cv-dataset-examples/home_interior_500.zip).
+
+To download the entire 100k datset (~1.1TB), follow these instructions:
+
+1. [Install gsutil](https://cloud.google.com/storage/docs/gsutil_install)
+2. Download the dataset via the command line
+```
+gsutil -m cp -r gs://unity-cv-dataset-examples/escher/100k-dataset/ ./
+```
+
+## Analyzing and Visualizing Datasets
+
+Datasets are generated in the SOLO format. For information on how to explore and analyze SOLO datasets, check out the [endpoint and schema documentation pages](https://github.com/Unity-Technologies/com.unity.perception/blob/main/com.unity.perception/Documentation~/Outputs.md) on the Perception repository.
+
+
+## Dataset Generator
 
 Head over to the [Releases](https://github.com/Unity-Technologies/SyntheticHomes/releases) page and download the latest build. Once the archive is extracted, you can simply double click `SyntheticHomes.exe` to run the application with its default settings. A window will be opened and frames will start to be randomized and rendered. Each final frame will take a while to render as we accumulate multiple frames to achieve high quality path traced results.
 
@@ -35,7 +47,13 @@ By default, the generated dataset will be located at `%USERPROFILE%\AppData\Loca
 
 Alternatively, you can supply command line arguments and an optional JSON configuration file to modify various settings of your run.
 
-## Command Line Arguments
+### System Requirements
+
+* Windows 10 or 11 64-bit 
+* DX12 with DXR compatible GPU for path tracing (list available [here](https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@14.0/manual/Ray-Tracing-Getting-Started.html))
+  * The application will fall back to rasterization if DXR capable hardware is not detected.
+
+### Command Line Arguments
 * `--scenario-config-file=<path-to-json-file>`
   * Supply a configuration file to control various parameters related to rendering and randomization. See below for Instructions.
 
@@ -44,11 +62,7 @@ Alternatively, you can supply command line arguments and an optional JSON config
 * `--output-path <path>`
   * Specify output folder
 
-## Analyzing and Visualizing Datasets
-
-Datasets are generated in the SOLO format. For information on how to explore and analyze SOLO datasets, check out the [endpoint and schema documentation pages](https://github.com/Unity-Technologies/com.unity.perception/blob/main/com.unity.perception/Documentation~/Outputs.md) on the Perception repository.
-
-## Configuration File
+### Configuration File
 
 Several aspects of the dataset generation can be controlled using a JSON config file that is provided to the application. A sample config file is provided [here](https://github.com/Unity-Technologies/SyntheticHomes/blob/main/SampleScenarioConfiguration.json).
 
@@ -104,18 +118,6 @@ In the **randomizers** block of the JSON config file, you control the behavior o
   * `randomExposure`: Enable this to introduce some randomization into the overall exposure of the camera, resulting in darker or brighter images.
   * `exposureRange`: The range of exposures to use when the above `randomExposure` flag is enabled. The valid range is [0, 1]. Smaller numbers generate darker images.
 * **`LightFixtureController`**: Randomizes the temperature of interior light fixtures, which is uniformly sampled from the provided `min` and `max` values. Each light fixture is randomized individually, resulting in a variety of light temperatures in the house.
-
-## HOW TO Use prepared 100k dataset
-
-**Initial step**: Install gsutil [HOWTO install gsutil](https://cloud.google.com/storage/docs/gsutil_install)
-
-1. Download the entire dataset via the command line (~1.1TB)
-```
-gsutil cp gs://unity-cv-dataset-examples/escher/100k-dataset/ ./
-```
-2. Use it in jupyter notebook [HOWTO connect dataset to jupyter notebook](https://stackoverflow.com/questions/56721927/how-to-load-data-to-jupyter-notebook-vm-from-google-cloud)
-
-3. Just review the dataset structure [LINK](https://console.cloud.google.com/storage/browser/unity-cv-dataset-examples/escher/100k-dataset)
 
 ## License
 * [License](LICENSE.md)
