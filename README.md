@@ -22,9 +22,9 @@ Interior lighting in homes is complex and is difficult to replicate with traditi
 * Camera position and properties
 
 ## How to use the 100k dataset
-We built a dataset of 100k home interior images and annotations in SOLO format. It is hosted at https://console.cloud.google.com/storage/browser/unity-cv-dataset-examples/escher/100k-dataset . 
+We built a dataset of 100k home interior images and annotations in SOLO format. It is hosted at https://console.cloud.google.com/storage/browser/unity-cv-dataset-customer-examples/100k-dataset . 
 
-A 500 image sample dataset can be found [here](https://storage.googleapis.com/unity-cv-dataset-examples/home_interior_500.zip).
+A 500 image sample dataset can be found [here](https://storage.googleapis.com/unity-cv-dataset-customer-examples/home_interior_500.zip).
 
 To download the entire 100k datset (~1.1TB), follow these instructions:
 
