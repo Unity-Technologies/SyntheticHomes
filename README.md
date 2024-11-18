@@ -22,7 +22,7 @@ Interior lighting in homes is complex and is difficult to replicate with traditi
 * Camera position and properties
 
 ## How to use the 100k dataset
-We built a dataset of 100k home interior images and annotations in SOLO format. It is hosted at https://drive.google.com/drive/folders/1c9Mh-U9m2temWt6nINGtat_SjdfdjfEo. 
+We built a dataset of 100k home interior images and annotations in SOLO format. 
 A 500 image sample dataset can be found in the links just below.  Due to storage limits on google drives, the 1.1TB sample dataset has been split across two drive.
 [here](https://drive.google.com/drive/folders/1c9Mh-U9m2temWt6nINGtat_SjdfdjfEo). Contains the zip of 500 home interiors.
 [and here](https://drive.google.com/drive/folders/0AFpBfeYwK9X5Uk9PVA). Contains unity-cv-dataset-customer-examples.
