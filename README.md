@@ -22,17 +22,11 @@ Interior lighting in homes is complex and is difficult to replicate with traditi
 * Camera position and properties
 
 ## How to use the 100k dataset
-We built a dataset of 100k home interior images and annotations in SOLO format. It is hosted at https://console.cloud.google.com/storage/browser/unity-cv-dataset-customer-examples/100k-dataset . 
+We built a dataset of 100k home interior images and annotations in SOLO format. It is hosted at https://drive.google.com/drive/folders/1c9Mh-U9m2temWt6nINGtat_SjdfdjfEo. 
+A 500 image sample dataset can be found in the links just below.  Due to storage limits on google drives, the 1.1TB sample dataset has been split across two drive.
+[here](https://drive.google.com/drive/folders/1c9Mh-U9m2temWt6nINGtat_SjdfdjfEo). Contains the zip of 500 home interiors.
+[and here](https://drive.google.com/drive/folders/0AFpBfeYwK9X5Uk9PVA). Contains unity-cv-dataset-customer-examples.
 
-A 500 image sample dataset can be found [here](https://storage.googleapis.com/unity-cv-dataset-customer-examples/home_interior_500.zip).
-
-To download the entire 100k datset (~1.1TB), follow these instructions:
-
-1. [Install gsutil](https://cloud.google.com/storage/docs/gsutil_install)
-2. Download the dataset via the command line
-```
-gsutil -m cp -r gs://unity-cv-dataset-customer-examples/100k-dataset/ ./
-```
 
 ## Analyzing and Visualizing Datasets
 
